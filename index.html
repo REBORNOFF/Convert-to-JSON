@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert to JSON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Convert to JSON</h1>
+        </header>
+    </div>
+    <div class="input-block">
+        <div class="container">
+            <div class="input-block__wrapper">
+                <label class="input-block__label" for="text-area">Simply enter your data then push the convert button</label>
+                <textarea id="text-area" class="text-area" placeholder="Your data..."></textarea>
+                <div class="input-block">
+                    <button class="button button__convert">Convert</button>
+                    <button class="button button__copy">Copy</button>
+                    <button class="button button__clear">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="output-block show">
+        <div class="container">
+            <div class="output-block__wrapper">
+                <pre class="output-block__code" id="code"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
